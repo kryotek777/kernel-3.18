@@ -1757,14 +1757,14 @@ static ssize_t ksm_run_change(unsigned long flags)
 static void ksm_tuning_pressure(void)
 {
 #if NR_CPUS > 1
-	/*if (bat_is_charger_exist() == KAL_TRUE) {
+	if (bat_is_charger_exist() == KAL_TRUE) {
 		if (ksm_thread_sleep_millisecs == 20 &&
 			ksm_thread_pages_to_scan == 100)
 			return;
-		/*set to default value *//*
+		/*set to default value */
 		ksm_thread_sleep_millisecs = 20;
 		ksm_thread_pages_to_scan = 100;
-	} else */ {
+	} else {
 		int num_cpus = num_online_cpus();
 		int three_quater_cpus = ((3 * num_possible_cpus() * 10)/4 + 5)/10;
 		int one_half_cpus = num_possible_cpus() >> 1;
