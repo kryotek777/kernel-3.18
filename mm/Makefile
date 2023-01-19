@@ -2,7 +2,7 @@
 # Makefile for the linux memory manager.
 #
 
-subdir-ccflags-y += -Werror
+subdir-ccflags-y += 
 
 mmu-y			:= nommu.o
 mmu-$(CONFIG_MMU)	:= fremap.o gup.o highmem.o memory.o mincore.o \

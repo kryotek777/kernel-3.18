@@ -1,4 +1,4 @@
-#ccflags-y += -Werror
+#ccflags-y += 
 
 #obj-y += mali/drivers/
 

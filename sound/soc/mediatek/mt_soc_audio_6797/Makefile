@@ -1,12 +1,12 @@
 # MTK Platform Support
 MTK_PLATFORM := $(subst ",,$(CONFIG_MTK_PLATFORM))
 # include path
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/include
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/include
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/include/mt-plat
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/base/power/include
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/base/power/$(MTK_PLATFORM)
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/scp/mt6797/
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/include
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/include
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/include/mt-plat
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/base/power/include
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/base/power/$(MTK_PLATFORM)
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/scp/mt6797/
 # flags for not ready feature, uncomment after ready
 ccflags-y += -D_GIT318_READY
 ccflags-y += -D_GIT318_PMIC_READY

@@ -44,7 +44,7 @@ TEXT_OFFSET := 0x00080000
 endif
 export	TEXT_OFFSET GZFLAGS
 
-subdir-ccflags-y += -Werror
+subdir-ccflags-y += 
 
 core-y		+= arch/arm64/kernel/ arch/arm64/mm/
 core-$(CONFIG_NET) += arch/arm64/net/

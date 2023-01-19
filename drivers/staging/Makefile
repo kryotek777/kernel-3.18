@@ -1,6 +1,6 @@
 # Makefile for staging directory
 
-subdir-ccflags-y += -Werror
+subdir-ccflags-y += 
 
 # fix for build system bug...
 obj-$(CONFIG_STAGING)		+= staging.o

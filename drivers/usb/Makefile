@@ -4,7 +4,7 @@
 
 # Object files in subdirectories
 
-subdir-ccflags-y += -Werror
+subdir-ccflags-y += 
 
 obj-$(CONFIG_USB)		+= core/
 
